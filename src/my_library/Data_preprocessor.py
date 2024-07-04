@@ -1,3 +1,4 @@
+#テキストデータの前処理を行うための Python コードです。DataPreprocessor クラスは、文章のリストと極性辞書を受け取り、文章中の単語の出現回数をカウントしてベクトル化し、さらにラベルを付与してデータを前処理します。
 import os
 import sys
 import pickle
