@@ -13,7 +13,7 @@ with open(preprocessed_data_path, "rb") as f:
     preprocessed_data, _ = pickle.load(f)
 
 print(preprocessed_data[1:10])
-sentence_array = input_loader.load_raw_data(data_path)
+sentence_array = input_loader.load_raw_data()
 predictions = predictor.predict(preprocessed_data)
 for i in range(len(predictions)):
     print(sentence_array[i], predictions[i])
