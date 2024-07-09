@@ -104,6 +104,15 @@ $ .\computer-programming-emotion-machine-learning\Scripts\activate
 ### preprocess_data.pyの実行
 以下のコマンドを実行して、データの前処理を行います：
 
+###### ***補足***
+preprocess_data.pyの実行にはかなりの時間がかかるため、それぞれの実行結果として得られるファイルを/data/example/ディレクトリに入れてあります。  
+この手順をスキップする場合、以下のコマンドによりファイルを複製してください。
+```sh
+$ cp ../data/example/data_preprocessed.pkl ../data/data_preprocessed.pkl
+$ cp ../data/example/train_preprocessed.pkl ../data/train_preprocessed.pkl
+$ cp ../data/example/validation_preprocessed.pkl ../data/validation_preprocessed.pkl
+```
+
 #### 教師データの前処理
 ```sh
 (~~~)$ python3 preprocess_data.py
