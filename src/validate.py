@@ -7,6 +7,12 @@ import pickle
 import src.my_library.Validator as Validator
 
 def find_best_model(models_path, data_path):
+    """データに対して最も適したモデルを選ぶ
+
+    Args:
+        models_path (list): 学習に利用するモデル
+        data_path (data): 学習させるデータ
+    """
     validator = Validator.Validator()
     validator.load_data(data_path)
 
