@@ -46,13 +46,7 @@ my_project/
 │       ├── load_dictionary.py
 │       └── load_input_data.py
 └── tests/
-    ├── test_read_file.py
-    ├── test_load_input_data.py
-    ├── test_load_dictionary_data.py
-    ├── test_classify_dictionary_data.py
-    ├── test_count_word_in_sentence.py
-    ├── test_predict_polarity.py
-    └── test_write_file.py
+    └── test_~~~~.py
 ```
 
 ## 実行前の準備
