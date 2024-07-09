@@ -2,7 +2,7 @@ import os
 import sys
 import pickle
 import numpy as np
-import count_statistics as counter
+import my_library.count_statistics as counter
 
 class DataPreprocessor:
     def __init__(self, sentence_arrays, dictionary):
