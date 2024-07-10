@@ -20,3 +20,4 @@ def count_and_vectorize(dic, sent):
     num_total = num_negative + num_positive + num_neutral 
     
     return [num_positive, num_negative, num_neutral, num_total]
+
