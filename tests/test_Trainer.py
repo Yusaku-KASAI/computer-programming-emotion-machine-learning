@@ -8,13 +8,16 @@ project_root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root_path)
 
 from src.my_library.Trainer import Trainer
-
-def test_load_data():
+@pytest.fixture(scope='module')
+def sample_data():
     # サンプルデータを作成
     X = np.array([[1, 2], [3, 4], [5, 6]])
     y = np.array([0, 1, 0])
     file_path = "data.pkl"
-    
+    return X,y
+
+def test_load_data():
+    X,y = sample_data
     # データを一時ファイルに保存
     with open(file_path, 'wb') as f:
         pickle.dump((X, y), f)
