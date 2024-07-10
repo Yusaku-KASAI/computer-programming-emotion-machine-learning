@@ -60,7 +60,7 @@ class Trainer:
         self.model = SVM.SVC(C=hyperparameter)
         self.model.fit(X, y)
 
-    def train_RF(self, hyperparameter, X, y):
+    def train_RF(self, n_estimators, hyperparameter, X, y):
         """
         RandomForestによる学習をおこなう。各決定木の最大深さを指定する
         Args:
@@ -68,5 +68,5 @@ class Trainer:
             X (numpy.ndarray): 前処理済みの訓練データ
             y (numpy.ndarray): ラベルデータ
         """
-        self.model = Ensemble.RandomForestClassifier(max_depth=hyperparameter)
+        self.model = Ensemble.RandomForestClassifier(n_estimators=n_estimators,max_depth=hyperparameter)
         self.model.fit(X, y)
