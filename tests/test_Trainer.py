@@ -15,7 +15,7 @@ def sample_data():
     y = np.array([0, 1, 0])
     file_path = "data.pkl"
     return X,y
-    
+
 def test_load_data():
     X,y = sample_data
     # データを一時ファイルに保存
