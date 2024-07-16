@@ -21,4 +21,3 @@ def count_and_vectorize(dic, sent):
     
     return [num_positive, num_negative, num_neutral, num_total]
 
-
